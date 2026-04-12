@@ -1,0 +1,27 @@
+<section class="hero">
+  <div class="hero__content">
+    <p class="eyebrow">Personal Tech Writing</p>
+    <h1>{{introTitle}}</h1>
+    <p class="hero__desc">{{introText}}</p>
+    <div class="hero__meta">
+      <span>{{postCount}} 篇文章</span>
+      <span>{{tagCount}} 个主题</span>
+    </div>
+  </div>
+  <aside class="hero__aside">
+    <p class="hero__aside-label">常写主题</p>
+    <div class="hero__tags">
+      {{featuredTags}}
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <div class="section__head">
+    <h2>最近文章</h2>
+    <a href="articles/">查看全部</a>
+  </div>
+  <div class="post-list">
+    {{latestPosts}}
+  </div>
+</section>

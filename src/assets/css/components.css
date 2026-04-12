@@ -1,0 +1,144 @@
+.post-list {
+  display: grid;
+  gap: 18px;
+}
+
+.post-card,
+.content-block {
+  position: relative;
+  overflow: hidden;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.post-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(63, 111, 140, 0.8), transparent);
+}
+
+.post-card::after,
+.content-block::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent 30%);
+}
+
+.post-card__meta {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.post-card__title {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+}
+
+.post-card__title a:hover {
+  color: var(--accent);
+}
+
+.post-card__desc {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+  box-shadow: 0 20px 38px rgba(15, 23, 42, 0.06);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0 auto 18px;
+  max-width: var(--max-width);
+}
+
+.about-grid .content-block {
+  max-width: none;
+  margin: 0;
+}
+
+.content-block h2 {
+  margin: 0 0 14px;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+
+.content-block p:last-child,
+.content-block ul:last-child {
+  margin-bottom: 0;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+}
+
+.about-list li + li {
+  margin-top: 10px;
+}
+
+.post-card__tags,
+.article-tags,
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag,
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.85rem;
+  border: 1px solid rgba(63, 111, 140, 0.08);
+}
+
+.tag:hover,
+.hero-tag:hover {
+  background: rgba(63, 111, 140, 0.12);
+}
+
+.hero-tag span {
+  min-width: 20px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 720px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

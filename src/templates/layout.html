@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="{{lang}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{pageTitle}}</title>
+    <meta name="description" content="{{pageDescription}}" />
+    <meta name="theme-color" content="#f6f3ee" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="{{canonicalUrl}}" />
+    <link rel="alternate" type="application/rss+xml" title="{{siteTitle}} RSS" href="{{rssUrl}}" />
+    <meta property="og:title" content="{{pageTitle}}" />
+    <meta property="og:description" content="{{pageDescription}}" />
+    <meta property="og:type" content="{{pageType}}" />
+    <meta property="og:url" content="{{pageUrl}}" />
+    <meta property="og:site_name" content="{{siteTitle}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{pageTitle}}" />
+    <meta name="twitter:description" content="{{pageDescription}}" />
+    <link rel="stylesheet" href="{{basePath}}/assets/css/base.css" />
+    <link rel="stylesheet" href="{{basePath}}/assets/css/layout.css" />
+    <link rel="stylesheet" href="{{basePath}}/assets/css/components.css" />
+    <link rel="stylesheet" href="{{basePath}}/assets/css/article.css" />
+    <script defer src="{{basePath}}/assets/js/main.js"></script>
+  </head>
+  <body class="{{bodyClass}}">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-title" href="{{basePath}}/">{{siteTitle}}</a>
+        <nav class="site-nav">{{nav}}</nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        {{content}}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {{year}} {{siteTitle}}</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "title": "Yyl Notes",
+  "description": "记录 Swift、SwiftUI 和 iOS 开发中的实践与思考。",
+  "siteUrl": "https://yyilin001.github.io",
+  "basePath": "",
+  "author": "yyl",
+  "nav": [
+    { "label": "首页", "href": "/" },
+    { "label": "文章", "href": "/articles/" },
+    { "label": "关于", "href": "/about.html" },
+    { "label": "GitHub", "href": "https://github.com/Yyilin001" }
+  ]
+}
