@@ -1,19 +1,24 @@
 .post-list {
   display: grid;
   gap: 18px;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .post-card,
 .content-block {
   position: relative;
   overflow: hidden;
-  max-width: var(--max-width);
-  margin: 0 auto;
   padding: 24px 26px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
+}
+
+.content-block {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .post-card {
