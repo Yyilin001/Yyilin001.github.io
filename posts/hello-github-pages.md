@@ -2,7 +2,7 @@
 title: "用 GitHub Pages 搭一个自己的技术站"
 date: "2026-04-11"
 description: "不用模板，自己写 HTML 和 CSS，再用 Markdown 管理内容。"
-tags: ["GitHub Pages", "Markdown", "CSS"]
+tags: ["Swift", "SwiftUI", "iOS"]
 slug: "hello-github-pages"
 draft: false
 ---
